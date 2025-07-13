@@ -1,0 +1,277 @@
+body {
+
+
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  text-align: center;
+}
+
+header {
+  padding: 2rem 1rem 1rem;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.servicios {
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.servicios ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.servicios li {
+  margin: 0.5rem 0;
+}
+
+.contacto {
+  margin: 2rem 0;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5b;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  background-color: hsla(257, 27%, 13%, 0.336);
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 30px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: 'Georgia', serif;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffd9b3;
+}
+
+.descripcion {
+  max-width: 600px;
+  margin: 10px auto;
+  font-size: 1.3em;
+}
+.seccion {
+  margin-top :40px; /*espacio arriba de cada bloque */
+  margin-bottom : 30 px; /* espacio dejabo */
+  padding : 20px;
+  background-color: #f0f8ff;
+  border-radius : 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.seccion h2 {
+  margin-bottom : 15px; /*espacio entre el titulo y el contenido */
+  font-size : 22px;  
+  color : #333;
+}
+.seccion ul {
+  margin-left : 20px; /* sangria para la lista */
+}
+
+/*codigo de las imagenes de las plataformas. empieza aca*/
+.plataformas {
+  display: flex;
+  justify-content : center;
+  flex-wrap : wrap;
+  gap: 25px;
+  margin-top: 20px; 
+}
+.plataforma {
+  text-align: center;
+  width: 100px;
+}
+.plataforma img{
+width : 60px;
+height: auto;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+transition: transform 0.2s;
+}
+.plataforma img:hover {
+transform: scale(1.05);
+}
+.platagorma p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  }
+
+  /*catalogo*/
+  .botones-catalogo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.botones-catalogo button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #87CEEB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botones-catalogo button:hover {
+  background-color: #00aaff;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  width: 180px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.item p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+
+/*boton de info*/
+.boton-info {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.boton-info:hover {
+  background-color: #217dbb;
+}
+
+
+
+/*para mejorar la vista en el celular- responsive*/
+@media (max-width: 600px) {
+  .plataformas,
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .botones-catalogo button {
+    width: 90%;
+    margin: 5px auto;
+  }
+}
+
+/* transición a los botones o imágenes para que al pasar el mouse hagan un efecto */
+img, button, .item {
+  transition: 0.3s ease;
+}
+img:hover {
+  transform: scale(1.03);
+}
+
+

@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Zona Vip</title>
+ <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="ht.jpg" alt="Logo de La Zona Vip" class="logo" />
+      <h1>La Zona Vip</h1>
+       <p class="descripcion">Tu sitio de confianza para acceder a tus plataformas favoritas al mejor precio.</p>
+    </div>
+  </header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#precios">Precios</a></li>
+      <li><a href="#preespe">Precios Especiales</a></li>
+      <li><a href="#catalogo">Catalogos</a></li>
+  
+    </ul>
+ </nav>
+       <!-- seccion de servicios de streaming -->
+ <section id ="servicios" class="seccion"> 
+      <h2>Servicios de Streaming</h2>
+     <div class="plataformas">
+      
+    <div class="plataforma">
+    <img src=" img/Netflix.png"  
+    alt="Netflix">
+    <p>Netflix</p>
+      </div> 
+
+    <div class =" plataforma">
+     <img src="img/Prime Video.png"
+     alt="Prime Video">
+     <p> Pime Video</p>
+      </div> 
+
+      <div class =" plataforma">
+     <img src="img/hbo max.jpg"
+     alt="hbo max">
+     <p> Hbo Max </p>
+     </div> 
+
+     <div class =" plataforma">
+     <img src="img/Disney.jpg"
+     alt="Disney">
+     <p> Disney Plus </p>
+     </div> 
+
+      <div class =" plataforma">
+     <img src="img/Tigo Sports.png"
+     alt="Tigo Sports">
+     <p> Tigo Sports </p>
+     </div> 
+    </div> 
+    </section>  
+
+    
+  <!--seccion de precios-->
+    <section id ="precios" class="seccion"> 
+      <h2>Precios de las plataformas</h2>
+     <div class="plataformas">
+      
+    <div class="plataforma">
+    <img src=" img/Netflix.png"  
+    alt="Netflix">
+    <p>Netflix <br><strong>30.000Gs/mes</strong></p>
+      </div> 
+
+    <div class =" plataforma">
+     <img src="img/Prime Video.png"
+     alt="Prime Video">
+     <p> Pime Video <br><strong>30.000Gs/mes</strong></p>
+      </div> 
+
+      <div class =" plataforma">
+     <img src="img/hbo max.jpg"
+     alt="hbo max">
+     <p> Hbo Max <br><strong>35.000Gs/mes</strong></p>
+     </div> 
+
+     <div class =" plataforma">
+     <img src="img/Disney.jpg"
+     alt="Disney">
+     <p> Disney Plus <br><strong>35.000Gs/mes</strong></p>
+     </div> 
+
+      <div class =" plataforma">
+     <img src="img/Tigo Sports.png"
+     alt="Tigo Sports">
+     <p> Tigo Sports <br><strong>50.000Gs/mes</strong></p>
+     </div> 
+    </div> 
+    </section>  
+    
+    
+      <!--seccion precios especiales-->
+<div class="seccion">
+    <section id ="preespe">
+      <h2>Precios Especiales</h2>
+      <ul>
+        <p>
+      <li><strong>Netflix + Prime Video</strong> - 45.000 Gs/mes</li>
+      <li><strong>Netflix + HBO MAX </strong> - 40.000 Gs/mes</li>
+      <li><strong>Prime Video + HBO MAX </strong> - 35.000 Gs/mes</li>
+      <li><strong>Netflix + Tigo Sports </strong> - 65.000Gs/mes</li>
+      <li><strong>Netflix + Prime Video + HBO MAX</strong> - 70.000 Gs/mes</li>
+      </p>
+    </ul>
+    </section>
+</div>
+
+<!--CATALOGO-->
+
+<section id="catalogo" class="seccion">
+  <h2>Catalogo por Plataforma</h2>
+
+  <!-- Menu de botones -->
+  <div class="botones-catalogo">
+    <button onclick="mostrarCatalogo('netflix')">Netflix</button>
+    <button onclick="mostrarCatalogo('prime')">Prime Video</button>
+    <button onclick="mostrarCatalogo('hbo')">HBO Max</button>
+    <button onclick="mostrarCatalogo('disney')">Disney plus</button>
+    <button onclick="mostrarCatalogo('tigoes')">Tigo Sports py</button>
+  </div>
+
+  <!-- Galeria Netflix -->
+  <div class="galeria" id="catalogo-netflix" style="display: none;">
+    <div class="item">
+      <img src="img/Stranger Things.jpg" alt="Stranger Things">
+      <p>Stranger Things</p>
+      <!--para la info de wikipedia-->
+      <a href="https://www.google.com/search?client=firefox-b-d&q=stranger+things" 
+      target="_blank" class="boton-info">Ver informacion</a>
+        
+    </div>
+    <div class="item">
+      <img src="img/cobra.webp" alt="Cobra kai">
+      <p>Cobra Kai</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=cobra+kai" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+
+    <div class="item">
+      <img src="img/dark.jpg" alt="dark">
+      <p>Dark</p>
+      <!--para la info de wikipedia-->
+      <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=52e1e9b7e774a509&sxsrf=AE3TifPFHoyRa3qw_uN3zRdy0yvAHMJI_w:1752270878936&q=dark&source=lnms&fbs=AIIjpHx4nJjfGojPVHhEACUHPiMQht6_BFq6vBIoFFRK7qchKHDX9TtpZ992kyQpCWcw0WjqCL58OT9xzaJZWNwg8Tb-HB3eYMN7Kc_xFsCdwX4yjeq3uU_nXkhBCVih9dtWfKeMEhTZu4BNV6VkU8iMsoz81bAO0cxigZ_s2DQRovJxIElXfQluAVkkoqIKS0jvC7b1gCcYcAcAL0CUSc2kfJeXMBkHBA&sa=X&ved=2ahUKEwihgKja5bWOAxU7LbkGHdlsB5MQ0pQJKAB6BAgVEAE&biw=1024&bih=607&dpr=1" 
+      target="_blank" class="boton-info">Ver informacion</a>
+  </div>
+  <div class="item">
+      <img src="img/elite.webp" alt="elite">
+      <p>Elite</p>
+      <!--para la info de wikipedia-->
+      <a href="https://www.google.com/search?client=firefox-b-d&q=elite" 
+      target="_blank" class="boton-info">Ver informacion</a>
+</div>
+
+<div class="item">
+      <img src="img/lacasa.jpg" alt="lacasa">
+      <p>La casa de papel</p>
+      <!--para la info de wikipedia-->
+      <a href="https://www.google.com/search?client=firefox-b-d&q=la+casa+de+papel" 
+      target="_blank" class="boton-info">Ver informacion</a>
+</div>
+
+<div class="item">
+      <img src="img/lacalle.jpg" alt="lacalle">
+      <p>La calle del terror</p>
+      <!--para la info de wikipedia-->
+      <a href="https://www.google.com/search?client=firefox-b-d&q=la+calle+del+terror" 
+      target="_blank" class="boton-info">Ver informacion</a>
+</div>
+
+<div class="item">
+      <img src="img/mision.jpg" alt="mision">
+      <p>Mision rescate</p>
+      <!--para la info de wikipedia-->
+      <a href="https://www.google.com/search?client=firefox-b-d&q=mision+rescate" 
+      target="_blank" class="boton-info">Ver informacion</a>
+</div>
+
+<div class="item">
+      <img src="img/peaky.jpg" alt="peaky">
+      <p>Peaky Blinders</p>
+      <!--para la info de wikipedia-->
+      <a href="https://www.google.com/search?client=firefox-b-d&q=peaky+blinders" 
+      target="_blank" class="boton-info">Ver informacion</a>
+</div>
+</div>
+
+
+  <!-- Galeria Prime Video -->
+  <div class="galeria" id="catalogo-prime" style="display: none;">
+    <div class="item">
+      <img src="img/theboys.jpg" alt="The Boys">
+      <p>The Boys</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=the+boys" 
+      target="_blank" class="boton-info">Ver informacion</a>
+    </div>
+
+    <div class="item">
+      <img src="img/reacherr.jpg" alt="Reacher">
+      <p>Reacher</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=reacher" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+
+    <div class="item">
+      <img src="img/invincible.jpg" alt="invincible">
+      <p>Invencible</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=invencible" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+
+ <div class="item">
+      <img src="img/eljuego.jpg" alt="eljuego">
+      <p>El juego de las llaves</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=el+juego+de+las+llaves" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+
+     <div class="item">
+      <img src="img/elhobit.jpg" alt="elhobit">
+      <p>El Hobbit</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=el+hobbit+un+viaje+inesperado" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+
+     <div class="item">
+      <img src="img/elduro.jpg" alt="elduro">
+      <p>El Duro</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=road+house" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+
+     <div class="item">
+      <img src="img/ellobo.png" alt="ellobo">
+      <p>El lobo de Wall Street</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=el+lobo+de+wall+street" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+
+     <div class="item">
+      <img src="img/terri.jpg" alt="terri">
+      <p>Terrifier</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=terrifier" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+
+  </div>
+
+  <!-- Galeria HBO Max -->
+  <div class="galeria" id="catalogo-hbo" style="display: none;">
+    <div class="item">
+      <img src="img/lacasadra.webp" alt="lacasadra">
+      <p>La Casa del Dragon</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=la+casa+del+dragon" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+    <div class="item">
+      <img src="img/Euphoria.jpg" alt="Euphoria">
+      <p>Euphoria</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=euphoria" 
+      target="_blank" class="boton-info">Ver informacion</a>
+    </div>
+
+    <div class="item">
+      <img src="img/game of thrones.jpg" alt="Game of Thrones">
+      <p>Juego de tronos</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=game+of+thrones" 
+      target="_blank" class="boton-info">Ver informacion</a>
+  </div>
+
+ <div class="item">
+      <img src="img/thelast.jpg" alt="thelast">
+      <p>The last of us</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=the+last+of+us" 
+      target="_blank" class="boton-info">Ver informacion</a>
+    </div>
+
+     <div class="item">
+      <img src="img/chespi.jpg" alt="chespi">
+      <p>Chespirito sin querer queriendo</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=chespirito+sin+querer+queriendo" 
+      target="_blank" class="boton-info">Ver informacion</a>
+    </div>
+
+     <div class="item">
+      <img src="img/dune.jpg" alt="dune">
+      <p>Duna</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=duna" 
+      target="_blank" class="boton-info">Ver informacion</a>
+    </div>
+
+     <div class="item">
+      <img src="img/thebat.jpg" alt="thebat">
+      <p>The Batman</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=the+batman" 
+      target="_blank" class="boton-info">Ver informacion</a>
+    </div>
+
+     <div class="item">
+      <img src="img/mad.jpg" alt="mad">
+      <p>Mad Max furia en el camino</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=mad+max" 
+      target="_blank" class="boton-info">Ver informacion</a>
+    </div>
+
+
+    </div>
+
+
+  <!-- Galeria Disney -->
+  <div class="galeria" id="catalogo-disney" style="display: none;">
+    <div class="item">
+      <img src="img/deadywol.jpg" alt="deadywol">
+      <p>Deadpol y Wolverine</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=deadpool+y+wolverine" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+    <div class="item">
+      <img src="img/moana.jpg" alt="moana">
+      <p>Moana</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=moana" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+
+    <div class="item">
+      <img src="img/losvenga.jpg" alt="losvenga">
+      <p>Los Vengadores</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=avengers" 
+      target="_blank" class="boton-info">Ver informacion</a>
+     </div>
+
+
+      <div class="item">
+      <img src="img/themanda.jpg" alt="themanda">
+      <p>The Mandalorian</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=the+mandalorian" 
+      target="_blank" class="boton-info">Ver informacion</a>
+       </div>
+
+
+
+      <div class="item">
+      <img src="img/grey.jpg" alt="grey">
+      <p>Grey's Anatomy</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=grey%27s+anatomy" 
+      target="_blank" class="boton-info">Ver informacion</a>
+       </div>
+
+
+      <div class="item">
+      <img src="img/lascro.jpg" alt="lascro">
+      <p>Las Cronicas de Narnia</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=narnia+1" 
+      target="_blank" class="boton-info">Ver informacion</a>
+       </div>
+
+      <div class="item">
+      <img src="img/piratas.jpg" alt="piratas">
+      <p>Piratas del Caribe</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=piratas+del+caribe" 
+      target="_blank" class="boton-info">Ver informacion</a>
+        </div>
+
+         
+      <div class="item">
+      <img src="img/nationalg.webp" alt="nationalg">
+      <p>National Geographic</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=national+geographic" 
+      target="_blank" class="boton-info">Ver informacion</a>
+
+        </div>
+
+
+  </div>
+
+  <!-- Galeria Tigo Sports -->
+  <div class="galeria" id="catalogo-tigoes" style="display: none;">
+    <div class="item">
+      <img src="img/copadeprimera.jpg" alt="copadeprimera">
+      <p>Futbol Paraguayo</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&q=futbol+paraguayo" 
+      target="_blank" class="boton-info">Ver informacion</a>
+      
+    </div>
+  </div>
+
+</section>
+
+
+<!--Funcion JavaScript para mostrar y ocultar catalogos-->
+<script>
+  function mostrarCatalogo(plataforma) {
+    // Ocultar todos
+    document.getElementById('catalogo-netflix').style.display = 'none';
+    document.getElementById('catalogo-prime').style.display = 'none';
+    document.getElementById('catalogo-hbo').style.display = 'none';
+    document.getElementById('catalogo-disney').style.display = 'none';
+    document.getElementById('catalogo-tigoes').style.display = 'none';
+
+    // Mostrar el seleccionado
+    document.getElementById('catalogo-' + plataforma).style.display = 'flex';
+  }
+</script>
+
+
+
+<script>
+  function verTrailer(boton) {
+    const contenedor = boton.nextElementSibling;
+    contenedor.style.display = 'block';
+    boton.style.display = 'none';
+  }
+</script>
+
+
+
+   <!--whatsap flotante-->
+    <section class="contacto">
+      <a href="https://wa.me/595971275415" class="whatsapp-float" target="_blank" title="Chatear por WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
+      </a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 La Zona Vip. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
